@@ -1,4 +1,4 @@
-# src/models/random_forest.git adimport joblib
+import joblib
 import numpy as np
 from typing import Any, Dict
 from sklearn.ensemble import RandomForestClassifier
