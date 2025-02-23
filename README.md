@@ -16,8 +16,8 @@ This project demonstrates a basic Intrusion Detection System (IDS) using machine
 ## Installation
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/your-repo-name.git
-   cd your-repo-name
+   git clone https://github.com/chirag-dewan/IDS-project.git
+   cd IDS-project
    ```
 
 2. **Install the required packages:**
