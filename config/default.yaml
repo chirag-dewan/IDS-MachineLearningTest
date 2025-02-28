@@ -1,0 +1,41 @@
+# Default configuration for IDS
+
+data:
+  # Data source: 'synthetic' or 'csv'
+  source: synthetic
+  # Path to CSV file 
+  path: null
+  # Column name for target/label in CSV
+  target_column: label
+  # Test set size (proportion)
+  test_size: 0.2
+
+features:
+  # Whether to create statistical features
+  create_statistical: true
+  # Whether to scale features
+  scale: true
+
+model:
+  # Model type: 'random_forest' or 'svm'
+  type: random_forest
+  # Model-specific parameters
+  params:
+    # Random Forest parameters 
+    n_estimators: 100
+    max_depth: 10
+    
+    # SVM parameters 
+    C: 1.0
+    kernel: rbf  # Options: 'linear', 'poly', 'rbf', 'sigmoid'
+    gamma: scale  # Options: 'scale', 'auto' or float value
+  # Whether to save the trained model
+  save: false
+  # Path to save/load model
+  path: model.joblib
+
+output:
+  # Directory for output files
+  dir: output
+  # Whether to save plots
+  save_plots: true
